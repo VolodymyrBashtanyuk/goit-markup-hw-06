@@ -223,13 +223,19 @@ body {
   right: 8px;
   border: 0;
   padding: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   background-color: var(--main-background);
   cursor: pointer;
 }
 .backdrop-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  fill: currentColor;
+}
+.backdrop-btn:hover .backdrop-icon,
+.backdrop-btn:focus .backdrop-icon {
+  color: var(--color-accent);
 }
 
 /* умение компании */

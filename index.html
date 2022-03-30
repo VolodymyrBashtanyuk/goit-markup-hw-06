@@ -339,10 +339,33 @@
         <div class="backdrop is-hidden" data-modal>
             <div class="backdrop-form">
                 <button type="button" class="backdrop-btn" data-modal-close>
-                    <svg class="backdrop-icon" width="30" height="30">
-                        <use class="" href="./images/icons.svg#close"></use>
+                    <svg class="backdrop-icon" width="11" height="11">
+                        <use class="backdrop-icon-close" href="./images/icons.svg#close"></use>
                     </svg>
                 </button>
+                <form name="signup-form">
+                    <h2>Оставьте свои данные, мы вам перезвоним</h2> <br>
+                    <label>Имя
+                        <input type="text" name="user-name"/> 
+                    </label><br>
+
+                    <label>Телефон
+                        <input type="tel" name="user-phone" id="user-phone" />
+                    </label><br>
+
+                    <label>Почта
+                        <input type="email" name="user-email" id="user-email" />
+                    </label><br>
+
+                    <label>Комментарий
+                        <textarea name="user-comments" rows="5" placeholder="Введите текст"></textarea>
+                    </label> <br>
+                    <Label>
+                        <input type="checkbox" name="agreement">
+                        Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                    </Label>
+                    <button type="submit">Отправить</button>
+                </form>
         </div>
     </main>
 
