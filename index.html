@@ -343,29 +343,39 @@
                         <use class="backdrop-icon-close" href="./images/icons.svg#close"></use>
                     </svg>
                 </button>
-                <form name="signup-form">
-                    <h2>Оставьте свои данные, мы вам перезвоним</h2> <br>
-                    <label>Имя
-                        <input type="text" name="user-name"/> 
-                    </label><br>
-
-                    <label>Телефон
-                        <input type="tel" name="user-phone" id="user-phone" />
-                    </label><br>
-
-                    <label>Почта
-                        <input type="email" name="user-email" id="user-email" />
-                    </label><br>
-
-                    <label>Комментарий
-                        <textarea name="user-comments" rows="5" placeholder="Введите текст"></textarea>
-                    </label> <br>
-                    <Label>
-                        <input type="checkbox" name="agreement">
-                        Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
-                    </Label>
-                    <button type="submit">Отправить</button>
-                </form>
+            <form class="form" name="signup-form">
+                <h3 class="form-text">Оставьте свои данные, мы вам перезвоним</h3>
+                   <ul class="form-title">
+                       <li>
+                            <label class="form-field">Имя
+                              <input class="form-input" type="text" name="user-name" />
+                            </label>
+                            
+                       </li>
+                       <li>
+                            <label class="form-field">Телефон
+                              <input class="form-input" type="tel" name="user-phone" />
+                            </label>
+                        </li>
+                        <li>
+                            <label class="form-field">Почта
+                                <input class="form-input" type="email" name="user-email"/>
+                                </label>
+                        </li>
+                        <li>
+                            <label class="form-field">Комментарий
+                            <textarea class="form-textarea" name="user-comments" rows="6" placeholder="Введите текст"></textarea>
+                            </label>
+                        </li>
+                        <li class="form-checkbox" >
+                            <Label>
+                             <input type="checkbox" name="agreement">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                            </Label>
+                        </li>
+                    </ul>
+                    <button class="form-btn" type="submit">Отправить</button>
+            </form>
+            </div>
         </div>
     </main>
 
@@ -425,6 +435,19 @@
                         </li>
                     </ul>
             </div>
+
+        <form class="footer-form">
+            <label><span class="footer-form-text">Подпишитесь на рассылку</span>
+                <div class="footer-subscribe">
+                    <input class="footer-field" type="email" name="mail" placeholder="Email" />
+                    <button class="footer-form-btn">Подписаться
+                        <svg class="footer-form-icon" width="24" height="24">
+                            <use class="" href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                </div>
+            </label>
+        </form>
+           
         </div>
 
     </footer>

@@ -232,12 +232,72 @@ body {
 }
 .backdrop-icon {
   fill: currentColor;
+  transition: color 250ms var(--timing-function);
 }
 .backdrop-btn:hover .backdrop-icon,
 .backdrop-btn:focus .backdrop-icon {
   color: var(--color-accent);
 }
 
+/* наполнение формы */
+.form-title {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.form {
+  padding: 40px;
+}
+.form-field {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--icon-sub-text);
+}
+.form-text {
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 12px;
+}
+.form-input {
+  width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+.form-textarea {
+  width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.form-checkbox {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--icon-sub-text);
+}
+.form-btn {
+  background-color: var(--color-accent);
+  color: var(--main-background);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0;
+  padding: 10px 55px;
+  transition: background-color 250ms var(--timing-function);
+}
 /* умение компании */
 .skills {
   display: flex;
@@ -559,10 +619,6 @@ body {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
-/* .footer .link:hover,
-.footer .link:focus {
-  color: var(--color-accent);
-} */
 .footer-adr {
   margin-top: 20px;
 }
@@ -596,6 +652,9 @@ body {
 .footer-icon {
   fill: var(--main-background);
 }
+.footer-social {
+  margin-right: 93px;
+}
 .footer-socials-link {
   display: flex;
   align-items: center;
@@ -609,4 +668,60 @@ body {
 .footer-socials-link:hover,
 .footer-socials-link:focus {
   background-color: var(--color-accent);
+}
+.footer-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-form-text {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--main-background);
+}
+.footer-subscribe {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+.footer-field {
+  width: 358px;
+  padding: 10px 15px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--main-background);
+  background-color: var(--footer-hero-background);
+}
+.footer-form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background-color: var(--color-accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: hidden;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--main-background);
+  cursor: pointer;
+  transition: background-color 250ms var(--timing-function);
+}
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  background-color: #188ce8;
+}
+.footer-form-icon {
+  margin-left: 10px;
+  fill: var(--main-background);
 }
